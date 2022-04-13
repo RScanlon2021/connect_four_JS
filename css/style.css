@@ -1,40 +1,79 @@
 /* Box Model Hack */
 * {
-     box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
-.clear {
-	clear: both;
-}
+/* .clear {
+  clear: both;
+} */
 
 /******************************************
 /* BASE STYLES
 /*******************************************/
 
 body {
-
 }
 
+.game {
+  position: absolute;
+  top: 8rem;
+  left: 50%;
+  transform: translate(-50%);
+  width: 650px;
+  height: 600px;
+  background: rgb(61, 138, 254);
+  border: 1px solid;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.441);
+  padding: 1.5rem;
+}
 
+h1 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.reset {
+  position: absolute;
+  top: 96vh;
+  left: 50%;
+  transform: translate(-50%);
+  border: 1px solid;
+  width: 5rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.slot {
+  width: 90px;
+  height: 90px;
+  background: white;
+  border: 1px solid;
+  border-radius: 50%;
+}
 /******************************************
 /* LAYOUT
 /*******************************************/
 header {
-
 }
 
 footer {
-
 }
 
 /******************************************
